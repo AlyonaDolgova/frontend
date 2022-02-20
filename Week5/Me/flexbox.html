@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    header,
+    main,
+    section,
+    aside,
+    footer{
+        border: 1px solid red;
+    }
+
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        flex: 1; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: stretch;
+        border: 1px solid red;
+    }
+
+    body {
+        display: flex;
+        flex-flow: column;
+        min-height:50vh;
+    }
+
+    .aside {
+        width: 30vh;
+        display: flex;
+        justify-content: center;
+        align-self: stretch;
+    }
+
+    section {
+        flex: 1; /*здесь задано только grow и он все сжирает (жадный)*/
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;   
+        }
+
+        .footer > div:first-child{
+            width: 150px;
+            height: 50px;
+        }
+
+        .footer > div:nth-child(2){
+            width: 150px;
+            height: 50px;
+        }
+
+        .footer > div:nth-child(3){
+            width: 150px;
+            height: 50px;
+        }
+
+        .footer > div:nth-child(4){
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+<header class="header">Шапка страницы
+</header>
+<main class="main">
+    <section class="section">Основная часть</section>
+    <div class="More1">Еще 1</div>
+    <div class="More2">Еще 2</div>
+    <div class="More2">Еще 3</div>
+    <aside class="aside">Боковая область</aside>
+</main> 
+<footer class="footer">
+    <div>Секция футера 1</div>
+    <div>Секция футера 2</div>
+    <div>Секция футера 3</div>
+    <div>Секция футера 3</div>
+</footer>
+</body>
+</html>
