@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        P {
+            border: 1px solid red;
+        }
+
+        .flexcontainer {
+            border: 1px solid blue;
+            display: flex;
+            /*по умолчанию flex-direction: row (в строчку) row-reverse (в обратном направлении)*/
+            flex-direction: row;
+            /*flex-direxction: column (сверху вниз) colimn-reverse (в обратном напралении)*/
+            flex-wrap: wrap;
+            height: 30vh;
+            align-content: stretch; /*stretch по умолчанию, flex-start прижались к началу, flex-end к концу, center к середине, space-between распределит по всей области к краям, space-around более гармоничное распределение (по ровну)*/
+        }
+
+        .flexcontainer1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center; /* stretch растягивает, flex-end к концу, flex-start к началу, center в центр*/
+            border: 1px solid blue;
+            height: 300px;
+        }
+
+            .flexcontainer2 {
+            border: 1px solid green;
+            flex-direction: row;
+            display: flex;
+            align-items: stretch;
+            height: 30vh;
+            }
+
+        .flexp_s {
+            align-self: center;
+            flex-grow: 1; /*жирность-жадность по умолчанию 0*/ 
+        }
+            
+        .flexp {
+            flex-basis: 5vw;/*главнее чем просто заданная ширина*/
+            width: 2vw;
+        }  
+        
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <div class="flexcontainer">
+        <p class="flexp">Абзац 11111111111111111111</p>    
+        <p class="flexp">Абзац 2222222222222222p>
+        <p class="flexp">Абзац 3</p>
+        <p class="flexp">Абзац 4</p>
+    </div>
+    <div class="flexcontainer1">
+        <p>Абзац 1</p>
+        <p>Абзац 2</p>
+        <p>Абзац 3</p>
+        <p>Абзац 4</p>
+    </div>
+    <div class="flexcontainer2">
+        <p class="flexp">Абзац 3</p>
+        <p class="flexp_s">Абзац 4</p>
+        <p class="flexp">Абзац 3</p>
+        <p class="flexp">Абзац 4</p>
+    </div>
+</body>
+</html>

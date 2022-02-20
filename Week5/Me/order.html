@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Пример использования свойства order</title>
+<style> 
+.container, .container2, .container3 {
+display: -webkit-flex;  /* для поддержки ранних версий браузеров */
+display: flex;  /* элемент отображается как блочный flex-контейнер */
+}
+div > div {
+width: 50px; /* устанавливаем ширину блока */
+height: 50px;  /* устанавливаем высоту блока */
+border: 1px solid orange;  /* устанавливаем сплошную границу 1px оранжевого цвета */
+} 
+.container div:nth-of-type(4) { /* выбираем четвертый <div> в первом контейнере */ 
+order: -1;  /* определяем порядок следования флекс элемента */
+}
+.container2 div:nth-of-type(4) { /* выбираем четвертый <div> во втором контейнере */ 
+order: 1;  /* определяем порядок следования флекс элемента  */
+}
+.container3 div:nth-of-type(4) { /* выбираем четвертый <div> в третьем контейнере */ 
+order: 2;  /* определяем порядок следования флекс элемента */
+}
+</style>
+</head>
+	<body>
+		<h3>order: -1;</h3>
+		<div class = "container">
+			<div>A</div>
+			<div>B</div>
+			<div>C</div>
+			<div>D</div>
+			<div>E</div>
+		</div>
+		<h3>order: 1;</h3>
+		<div class = "container2">
+			<div>A</div>
+			<div>B</div>
+			<div>C</div>
+			<div>D</div>
+			<div>E</div>
+		</div>
+		<h3>order: 2;</h3>
+		<div class = "container3">
+			<div>A</div>
+			<div>B</div>
+			<div>C</div>
+			<div>D</div>
+			<div>E</div>
+		</div>
+	</body>
+</html>
