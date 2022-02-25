@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background: yellowgreen;
+            grid-area: header;
+            }
+
+        .aside {
+            background: orchid;
+            grid-area: aside;
+        }
+
+        .main {
+            background: rgb(37, 34, 230);
+            grid-area: main;
+        }
+
+        .footer {
+            background: rgb(216, 163, 18);
+            grid-area: footer;
+            }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 10% 1fr 10%; /*т.е. задаем, что 1ая строчка 10%, 3ья строчка 10% а средней сколько останется (1fr)*/
+            height: 90vh; /*задали высоту контейнера 90% от экрана и он так растянулся*/
+            grid-template-areas: 
+            "header header header header"/*задали для header, что он займет все 4 ячейки (заполнит)*/
+            "aside main main main" /*aside 1 ячейка слева, main 3 ячейки звполняет*/
+            "footer footer footer footer"; /*repeat здесь нельзя использовать*/
+        }
+    </style>
+</head>
+<body>
+<h1>Гриды</h1>
+<div class="container">
+<header class="header">header</header>
+<aside class="aside">aside</aside>
+<main class="main">main</main>
+<footer class="footer">footer</footer>
+</div>
+</body>
+</html>

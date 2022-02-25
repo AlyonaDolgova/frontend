@@ -1,0 +1,132 @@
+/*Header*/
+body {
+    margin: 0;
+    color: #232323;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+header {
+    height: 80px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 24px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #232323;
+}
+
+.main-banner {
+    background: url("/Week5/Me/assets/images/Главный\ баннер.jpg") center no-repeat;
+    height: 480px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner h1 {
+    font-size: 48px;
+    font-weight: bold;
+    max-width: 730px;
+    text-align: center;
+}
+
+/*Первый блок*/
+.section1 .container {
+    width: 920px;
+    height: 322px;
+}
+
+/*Заголовок Section1*/
+h2 {
+    max-width: 102px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #5C6E62;
+}
+
+/*Текст*/
+.section1 .text-block {
+    height: 250px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #232323;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/*Картинка*/
+.section1 .image-block {
+    width: 420px;
+    height: 264px;
+    background: url("../images/Rectangle\ 5.jpg") right no-repeat;
+}
+
+/*второй блок*/
+.section2-banner {
+    height: 330px;
+    background: url("/Week5/Me/assets/images/Rectangle\ 6.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section2-banner h1 {
+    max-width: 102px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #E7A646;
+}
+
+.section2-banner .text-block2 {
+    text-align: center;
+    max-width: 920px;
+    max-height: 150px;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    display: flex;
+}

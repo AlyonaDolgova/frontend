@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cell {
+            background-color: salmon;
+            color: white;
+            padding: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            justify-items: stretch; /*center, start, end, stretch*/
+            align-items: stretch; /*center, flex-end, flex-start, stretch, baseline, inherit*/
+        }
+
+        .cell-1 {
+            justify-self: start; /*center, end, start, stretch*/
+            align-self: flex-start; /*center, end, start, stretch*/
+        }
+    </style>
+</head>
+
+<body>
+<h1>Гриды</h1>  
+<div class="container">
+<div class="cell cell-1">Свойство order
+    </div>
+<div class="cell cell-2">Here you can find activities to practise your reading skills. Reading will help you to improve your understanding of the language and build your vocabulary.</div>
+<div class="cell cell-3">The self-study lessons in this section are written and organised according to the levels of the Common European Framework of Reference for languages (CEFR). There are different types of texts and interactive exercises that practise the reading skills you need to do well in your studies, to get ahead at work and to communicate in English in your free time.</div>
+<div class="cell cell-4">Take our free online English test to find out which level to choose. Select your level, from beginner (CEFR level A1) to advanced (CEFR level C1), and improve your reading skills at your own speed, whenever it's convenient for you.</div>
+<div class="cell cell-5">Reading practice to help you understand simple information, words and sentences about known topics. Texts include posters, messages, forms and timetables.</div>
+<div class="cell cell-6">Reading practice to help you understand simple texts and find specific information in everyday material. Texts include emails, invitations, personal messages, tips, notices and signs.</div>
+<div class="cell cell-7">Reading practice to help you understand texts with everyday or job-related language. Texts include articles, travel guides, emails, adverts and reviews.</div>
+<div class="cell cell-9">Reading practice to help you understand texts with a wide vocabulary where you may need to consider the writer's opinion. Texts include articles, reports, messages, short stories and reviews.</div>
+<div class="cell cell-10">With our range of online courses you can choose the method of learning best suited to you. Our English courses and classes are designed by some of the world's English teaching experts and offer a safe and inclusive learning community to help you improve your English and achieve your ambitions.</div>
+</div>
+</body>
+</html>
