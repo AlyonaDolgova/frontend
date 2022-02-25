@@ -48,7 +48,7 @@ nav a {
 }
 
 .main-banner {
-    background: url("/Week5/Me/assets/images/Главный\ баннер.jpg") center no-repeat;
+    background: url("/Week5/Me/assets/images/Main\ baner.jpg") center no-repeat;
     height: 480px;
     background-size: cover;
     display: flex;
@@ -61,22 +61,31 @@ nav a {
     font-weight: bold;
     max-width: 730px;
     text-align: center;
+    margin: 0;
 }
 
 /*Первый блок*/
 .section1 .container {
     width: 920px;
     height: 322px;
+    margin-top: 100px;
+    margin-bottom: 130px;
 }
 
 /*Заголовок Section1*/
-h2 {
+.section1 h2 {
     max-width: 102px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     color: #5C6E62;
+    margin: 0;
+}
+
+.section1content {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*Текст*/
@@ -87,40 +96,42 @@ h2 {
     font-weight: normal;
     font-size: 16px;
     color: #232323;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: 440px;
+    margin-top: 58px;
+    margin-bottom: 14px;
+    /*как растянуть текс на весь блок .section1 .container  по высоте?*/
 }
 
 /*Картинка*/
 .section1 .image-block {
     width: 420px;
     height: 264px;
-    background: url("../images/Rectangle\ 5.jpg") right no-repeat;
+    margin-top: 58px;
 }
 
 /*второй блок*/
-.section2-banner {
-    height: 330px;
+.section2 .container {
+    width: 1440px;
+    margin-left: 0;
+    margin-top: 0;
     background: url("/Week5/Me/assets/images/Rectangle\ 6.jpg") center no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
 }
 
-.section2-banner h1 {
-    max-width: 102px;
+.section2 h2 {
     font-family: Roboto;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     color: #E7A646;
+    text-align: center;
+    margin: 0;
 }
 
-.section2-banner .text-block2 {
-    text-align: center;
+.section2 .text-block {
     max-width: 920px;
     max-height: 150px;
     font-family: Roboto;
@@ -128,5 +139,8 @@ h2 {
     font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
-    display: flex;
+    margin-top: 106px;
+    margin-bottom: 74px;
+    margin-left: 260px;
+    margin-right: 260px;
 }
