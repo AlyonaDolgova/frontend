@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Страница-опросник для обладателей котиков</title>
+</head>
+<body>
+    <form>
+        Кличка кота: 
+        <input type="text" name="cat's name" /><br />
+    </form>
+    <form>
+        <p>Имя владельца:
+        <label>
+            <input type="text" name="owner's name" /><br />
+        </label>
+        <p>Контакты владельца: 
+        <label>
+        <input type="text" name="owner's contact" />
+    </label>
+    </form>
+    <form>
+        Порода кота
+        <select>
+            <option value="books">Дворовая</option>
+            <option value="html">Русская голубая</option>
+            <option value="css">Ангорская</option>
+            <option value="php">Рэгдолл</option>
+        </select>
+    </form>
+    <form>
+        <p>Питание:</p>
+        <label>
+        Сухой корм
+        <input type="checkbox" name="food" value="1" /><br/>
+        </label>
+        <label>
+        Влажный корм
+        <input type="checkbox" name="food" value="2" /><br/>
+        </label>
+        <label>
+        Натуральный корм
+        <input type="checkbox" name="food" value="3" />
+    </label>
+    </form>
+    <form>
+        <p> Пол кота: </p>
+        <label>
+        <input type="radio" name="s" value="m" /> Самец<br />
+        </label>
+        <label>
+        <input type="radio" name="s" value="f" /> Самка
+    </label>
+    </form>
+    <form> 
+        <p>Комментарии владельца:<br/>
+        <textarea name="comment" rows="10" cols="45"></textarea><br>
+    </form>
+    <img src="https://hvost.news/optimpictures/images/0b55285df2d46f861b4f15ebf1174b6c/08a1167da1df1d0399d64352985dd50d.jpg.webp" alt="cat" width="350" height="250">
+<p><button type="button">Сохранить</button></p>
+</body>
+</html>
