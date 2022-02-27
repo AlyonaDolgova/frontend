@@ -110,15 +110,20 @@ nav a {
 }
 
 /*второй блок*/
+.section2 {
+    background: url("/Week5/Me/assets/images/Rectangle\ 6.jpg") center no-repeat;
+    background-size: cover;
+    padding-top: 76px;
+    padding-bottom: 106px;
+}
+
 .section2 .container {
-    width: 1440px;
-    margin-right: 0;
-    margin-left: 0;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
     padding-right: 0;
     padding-left: 70px;
     padding-right: 70px;
-    background: url("/Week5/Me/assets/images/Rectangle\ 6.jpg") center no-repeat;
-    background-size: cover;
     text-align: center;
 }
 
@@ -133,17 +138,15 @@ nav a {
 }
 
 .section2 .text-block {
-    max-width: 920px;
-    max-height: 150px;
     font-family: Roboto;
     font-style: normal;
     font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 76px;
-    padding-bottom: 106px;
+}
+
+.boldtext {
+    font-weight: bold;
 }
 
 /*Третий блок*/
@@ -166,7 +169,6 @@ nav a {
 .section3 .image-block {
     width: 420px;
     height: 264px;
-    margin-top: 58px;
     float: left;
 }
 
@@ -184,7 +186,6 @@ nav a {
 }
 
 .section3 .text-block2 {
-    height: 350px;
     width: 920px;
     font-family: Roboto;
     font-style: normal;
@@ -224,8 +225,6 @@ footer .container {
     width: 240px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 66px;
-    padding-bottom: 66px;
 }
 
 form {
@@ -234,10 +233,15 @@ form {
     margin-bottom: 0;
 }
 
-footer .container p1 {
-    justify-content: center;
+footer .container .text {
+    text-align: center;
     margin-top: 66px;
     margin-bottom: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
 }
 
 footer .container .name {
@@ -246,7 +250,7 @@ footer .container .name {
     margin-bottom: 20px;
 }
 
-footer .container .name p2 {
+footer .container .name p1 {
     margin-top: 18px;
     width: 29px;
 }
@@ -257,7 +261,7 @@ footer .container .phone {
     margin-bottom: 30px;
 }
 
-footer .container p3 {
+footer .container p2 {
     width: 57px;
 }
 
