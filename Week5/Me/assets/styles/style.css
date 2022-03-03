@@ -65,7 +65,7 @@ nav a {
 }
 
 /*Первый блок*/
-.section1 .container {
+.Section1 .container {
     width: 920px;
     height: 322px;
     margin-top: 100px;
@@ -73,7 +73,7 @@ nav a {
 }
 
 /*Заголовок Section1*/
-.section1 h2 {
+.Section1 h2 {
     max-width: 102px;
     font-family: Roboto;
     font-style: normal;
@@ -89,7 +89,7 @@ nav a {
 }
 
 /*Текст*/
-.section1 .text-block {
+.Section1 .text-block {
     height: 250px;
     font-family: Roboto;
     font-style: normal;
@@ -103,21 +103,21 @@ nav a {
 }
 
 /*Картинка*/
-.section1 .image-block {
+.Section1 .image-block {
     width: 420px;
     height: 264px;
     margin-top: 58px;
 }
 
 /*второй блок*/
-.section2 {
+.Section2 {
     background: url("/Week5/Me/assets/images/Rectangle\ 6.jpg") center no-repeat;
     background-size: cover;
     padding-top: 76px;
     padding-bottom: 106px;
 }
 
-.section2 .container {
+.Section2 .container {
     max-width: 920px;
     margin-left: auto;
     margin-right: auto;
@@ -127,17 +127,16 @@ nav a {
     text-align: center;
 }
 
-.section2 h2 {
+.Section2 h2 {
     font-family: Roboto;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     color: #E7A646;
     margin: 0;
-    padding-top: 54px;
 }
 
-.section2 .text-block {
+.Section2 .text-block {
     font-family: Roboto;
     font-style: normal;
     font-size: 18px;
@@ -150,13 +149,13 @@ nav a {
 }
 
 /*Третий блок*/
-.section3 .container {
+.Section3 .container {
     width: 920px;
     margin-top: 90px;
     margin-bottom: 140px;
 }
 
-.section3 h2 {
+.Section3 h2 {
     max-width: 102px;
     font-family: Roboto;
     font-style: normal;
@@ -166,13 +165,13 @@ nav a {
     margin: 0;
 }
 
-.section3 .image-block {
+.Section3 .image-block {
     width: 420px;
     height: 264px;
     float: left;
 }
 
-.section3 .text-block1 {
+.Section3 .text-block1 {
     height: 250px;
     width: 440px;
     font-family: Roboto;
@@ -185,7 +184,7 @@ nav a {
     margin-left: 480px;
 }
 
-.section3 .text-block2 {
+.Section3 .text-block2 {
     width: 920px;
     font-family: Roboto;
     font-style: normal;
@@ -195,7 +194,7 @@ nav a {
     margin-top: 56px;
 }
 
-.section3 .text-block3 {
+.Section3 .text-block3 {
     height: 75px;
     width: 450px;
     font-family: Roboto;
