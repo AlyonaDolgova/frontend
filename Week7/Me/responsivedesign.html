@@ -75,8 +75,31 @@
         .container {
         display: grid;
         grid-template-columns: repeat (4. 1fr);
-        grid-template-rows: 10% 15% 10% 10% 15%; 
+        grid-template-rows: 20% 25% 20% 20% 15%; 
         height: 90vh; 
+        }
+
+        .header,
+        .main,
+        .bellowmain1,
+        .bellowmain2,
+        .bellowmain3,
+        .aside,
+        .section1,
+        .section2,
+        .section3,
+        .section4 {
+            padding: 5px;
+            font-size: 2em;
+        }
+
+        .pictcontainer {
+        width: 60%; 
+        }
+
+        .pict {
+            width: 100%;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -87,7 +110,11 @@
 <bellowmain1 class="bellowmain1">Еще 1</bellowmain1>
 <bellowmain2 class="bellowmain2">Еще2</bellowmain2>
 <bellowmain3 class="bellowmain3">Еще3</bellowmain3>
-<aside class="aside">Боковая часть</aside>
+<aside class="aside">Боковая часть
+    <div class="pictcontainer">
+        <div><img class="pict" src="/Week7/Alice/assets/images/cat face.jpg"></div>
+    </div>
+</aside>
 <footer class="section1">Секция футера 1</footer>
 <footer class="section2">Секция футера 2</footer> 
 <footer class="section3">Секция футера 3</footer>
