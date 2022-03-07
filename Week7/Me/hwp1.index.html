@@ -7,84 +7,97 @@
     <title>Document</title>
 </head>
 <style>
-    .header {
-    background: yellowgreen;
-    grid-area: header;
-    text-align: center;
-    padding-top: 20px;
-    }
+        body {
+                margin: 0;
+        }
+        .header {
+                background: yellowgreen;
+                grid-area: header;
+                text-align: center;
+                padding-top: 20px;
+        }
 
-    .main {
-            background: rgb(37, 34, 230);
-            grid-area: main;
-    }
+        .main {
+                background: rgb(37, 34, 230);
+                grid-area: main;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+        }
 
-    .bellowmain1 {
-            background: rgb(216, 14, 48);
-    }
+        .bellowmain1 {
+                background: rgb(110, 109, 182);
+                grid-column: 1/3;
+        }
 
-    .bellowmain2 {
-            background: rgb(118, 181, 223);
-    }
+        .bellowmain2 {
+                background: rgb(216, 14, 48);
+        }
 
-    
-    .bellowmain3 {
-            background: rgb(29, 228, 3);
-    }
+        .bellowmain3 {
+                background: rgb(118, 181, 223);
+        }
 
-    .aside {
-            background: orchid;
-            grid-area: aside;
-    }
-
-    .footer {
-        grid-area: footer;
         
-    }
-    .section1 {
-            background: rgb(216, 163, 18);
-    }
+        .bellowmain4 {
+                background: rgb(29, 228, 3);
+                grid-column: 1/3;
+        }
 
-    .section2 {
-            background: rgb(223, 220, 210);
-    }
+        .aside {
+                background: orchid;
+                grid-area: aside;
+        }
 
-    .section3 {
-            background: rgb(36, 45, 77);
-    }
+        .footer {
+                grid-area: footer;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                
+        }
+        .section1 {
+                background: rgb(216, 163, 18);
+        }
 
-    .section4 {
-            background: rgb(241, 230, 72);
-    }
+        .section2 {
+                background: rgb(223, 220, 210);
+        }
 
-    .container {
-            display: grid;
-            height: 87vh;
-            width: 100vw;
-            grid-template-columns: (8. repeat(1fr));
-            grid-template-rows: 10% 15% 10% 10% 15%;
-            grid-template-areas: 
-            " header header header header header header header header"
-            "main main main main main main aside aside"
-            "footer footer footer footer footer footer footer footer"
-    }
+        .section3 {
+                background: rgb(36, 45, 77);
+        }
+
+        .section4 {
+                background: rgb(241, 230, 72);
+        }
+
+        .container {
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+                grid-template-rows: 100px calc(100vh - 200px) 100px;
+                grid-template-areas: 
+                " header header header header header header header header"
+                "main main main main main main aside aside"
+                "footer footer footer footer footer footer footer footer";
+                height: 100;
+        }
 
 </style>
 <body>
     <div class="container">
         <header class="header">Шапка страницы</header>
-        <main class="main">Основная часть
-        <bellowmain1 class="bellowmain1">Еще 1</bellowmain1>
-        <bellowmain2 class="bellowmain2">Еще 2</bellowmain2>
-        <bellowmain3 class="bellowmain3">Еще 3</bellowmain3>
+        <main class="main">
+                <bellowmain1 class="bellowmain1"> Основная часть</bellowmain1>
+                <bellowmain1 class="bellowmain2">Еще 1</bellowmain1>
+                <bellowmain2 class="bellowmain3">Еще 2</bellowmain2>
+                <bellowmain3 class="bellowmain4">Еще 3</bellowmain3>
         </main>
         <aside class="aside">Боковая часть</aside>
         <footer class="footer">
-        <footer class="section1">Секция футера 1</footer>
-        <footer class="section2">Секция футера 2</footer> 
-        <footer class="section3">Секция футера 3</footer>
-        <footer class="section4">Секция футера 4</footer>
+                <div class="section1">Секция футера 1</div>
+                <div class="section2">Секция футера 2</div> 
+                <div class="section3">Секция футера 3</div>
+                <div class="section4">Секция футера 4</div>
         </footer>
-        </div>  
 </body>
 </html>
