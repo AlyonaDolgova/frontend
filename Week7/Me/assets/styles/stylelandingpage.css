@@ -12,17 +12,20 @@ ul {
     padding: 0;
 }
 
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
     height: inherit;
 }
 
-header {
-    height: 80px;
-    position: absolute;
-    top: 0;
-    width: 100%;
+@media screen and (min-width: 1024px) {
+    header {
+        height: 80px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
 }
 
 header .container {
@@ -72,12 +75,13 @@ nav a {
 }
 
 /*Первый блок*/
-.Section1 .container {
-    width: 920px;
-    height: 322px;
-    margin-top: 100px;
-    margin-bottom: 130px;
-
+@media screen and (min-width: 1024px) {
+    .Section1 .container {
+        width: 920px;
+        height: 322px;
+        margin-top: 100px;
+        margin-bottom: 130px;
+    }
 }
 
 /*Заголовок Section1*/
@@ -119,11 +123,13 @@ nav a {
 }
 
 /*второй блок*/
-.Section2 {
-    background: url("/Week5/Me/assets/images/Rectangle\ 6.jpg") center no-repeat;
-    background-size: cover;
-    padding-top: 76px;
-    padding-bottom: 106px;
+@media screen and (min-width: 1024px) {
+    .Section2 {
+        background: url("/Week5/Me/assets/images/Rectangle\ 6.jpg") center no-repeat;
+        background-size: cover;
+        padding-top: 76px;
+        padd ing-bottom: 106px;
+    }
 }
 
 .Section2 .container {
@@ -158,10 +164,12 @@ nav a {
 }
 
 /*Третий блок*/
-.Section3 .container {
-    width: 920px;
-    margin-top: 90px;
-    margin-bottom: 140px;
+@media screen and (min-width: 1024px) {
+    .Section3 .container {
+        width: 920px;
+        margin-top: 90px;
+        margin-bottom: 140px;
+    }
 }
 
 .Section3 h2 {
@@ -223,9 +231,11 @@ nav a {
     color: #E7A646;
 }
 
-footer {
-    height: 380px;
-    background-color: #4D4C4A;
+@media screen and (min-width: 1024px) {
+    footer {
+        height: 380px;
+        background-color: #4D4C4A;
+    }
 }
 
 footer .container {
@@ -310,3 +320,5 @@ footer button {
     background: #E7A646;
     border-radius: 3px;
 }
+
+@media screen and (min-width: 1024px) {}
