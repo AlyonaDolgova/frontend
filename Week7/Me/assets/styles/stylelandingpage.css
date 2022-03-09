@@ -40,7 +40,7 @@ nav ul {
     list-style: none;
     display: grid;
     align-items: center;
-    grid-template-columns: calc(75px+24px) calc(75px+24px) 75px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 nav ul li:not(:last-child) {
@@ -60,6 +60,7 @@ nav a {
     display: grid;
     justify-content: center;
     align-items: center;
+
 }
 
 .main-banner h1 {
@@ -228,7 +229,7 @@ footer {
 }
 
 footer .container {
-    display: flex;
+    display: grid;
     width: 240px;
     margin-left: auto;
     margin-right: auto;
@@ -273,8 +274,7 @@ footer .container p2 {
 }
 
 footer .container p1,
-p2,
-p3 {
+p2 {
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
@@ -294,7 +294,7 @@ footer input {
     box-sizing: border-box;
 }
 
-footer .container p4 {
+footer .container p3 {
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
